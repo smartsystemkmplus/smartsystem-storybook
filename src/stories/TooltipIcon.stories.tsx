@@ -1,17 +1,17 @@
 import { Meta, StoryObj } from "@storybook/react";
-import TableTemplate from "./TableTemplate";
+import TooltipIcon from "./TooltipIcon";
 
 const meta = {
-  title: "Example/TableTemplate",
-  component: TableTemplate,
+  title: "Example/TooltipIcon",
+  component: TooltipIcon,
   parameters: {
     layout: "centered",
   },
   args: {
-    label: 'Hello World',
-    variant: 'question',
+    label: "Hello World",
+    variant: "question",
     color: "#016DB2",
-    labelColor: null,
+    labelColor: undefined,
     labelWidth: "auto",
     position: "top",
     iconSize: 20,
@@ -26,15 +26,11 @@ const meta = {
     variant: {
       defaultValue: "question",
       control: "select",
-      options: [
-        "info",
-        "question",
-      ],
+      options: ["info", "question"],
     },
-     
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof TableTemplate>;
+} satisfies Meta<typeof TooltipIcon>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
