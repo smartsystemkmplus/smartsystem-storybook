@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import ProfilePicture from "./ProfilePicture";
 
 const meta = {
-  title: "Example/Profile",
+  title: "Example/ProfilePicture",
   component: ProfilePicture,
   parameters: {
     layout: "centered",
